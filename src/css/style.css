@@ -1859,11 +1859,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
-  color: #73818f;
-  opacity: 1;
-}
-
 .form-control::-ms-input-placeholder {
   color: #73818f;
   opacity: 1;
@@ -11557,10 +11552,6 @@ canvas {
 }
 
 .sidebar .sidebar-form .form-control::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.sidebar .sidebar-form .form-control:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
