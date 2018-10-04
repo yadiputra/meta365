@@ -3316,6 +3316,13 @@ input[type="button"].btn-block {
   align-items: stretch;
   width: 100%;
 }
+.input-group .error-message {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 1px;
+  font-size: 14px;
+  color: red;
+}
 
 .input-group > .form-control,
 .input-group > .custom-select,
@@ -11128,6 +11135,43 @@ canvas {
 .main .container-fluid {
   padding: 0 30px;
 }
+.main .main-table .row{
+  flex-direction: row;
+  align-items: center;
+}
+.main .main-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 758px) {
+  .main .main-content {
+    position: absolute;
+    top: 50%;
+    margin: 0px;
+    width: calc(100% - 200px);
+    transform: translateY(-50%);
+  }
+}
+.main-table {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  background: #fff;
+}
+.main-table .col-md-6 {
+  margin-bottom: 20px;
+}
+.main-table .header {
+  display: flex;
+  width: 100%;
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+.main-table .body {
+    padding: 0px 10px;
+
+}
 
 .app-header {
   position: relative;
@@ -14374,4 +14418,10 @@ body {
   breakpoint-lg: 992px;
   breakpoint-xl: 1200px;
 }
+
+/* OVERIDER
+-----------------------*/
+
+
+
 /*# sourceMappingURL=style.css.map */
