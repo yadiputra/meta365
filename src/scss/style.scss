@@ -11,3 +11,66 @@
 
 // If you want to add something do it here
 @import "custom";
+.navbar-toggler.aside-menu-toggler.d-md-down-none, .navbar-toggler.aside-menu-toggler.d-lg-none {
+	display: none;
+}
+.nav-item .dropdown-menu {
+	top: 31px;
+	right: 1px;
+}
+.nav-saldo {
+	padding: 0.75rem 1rem;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.error-message {
+	position: absolute;
+    bottom: -40px;
+    font-size: 13px;
+    color: red;
+}
+.fa-user-circle {
+	font-size: 20px;
+}
+label {
+	text-transform: capitalize;
+}
+.main-content {
+	@media (max-width: 767px) {
+		.col-md-6.offset-md-3 {
+			margin-top: 20px;
+		}
+	}
+	@media (min-width: 768px) {
+		.col-md-6.offset-md-3 {
+			position: absolute;
+		  	top: 50%;
+		  	left: 100px;
+		  	transform: translateY(-50%);
+		}
+	}
+}
+.main-table {
+	background: #fff;
+	border-radius: 4px;
+	.header {
+		background: rgba(0, 0, 0, 0.06);
+	    font-size: 16px;
+	    width: 100%;
+	    display: block;
+	    padding: 14px 20px;
+	}
+	.row.body {
+		display: flex;
+    	flex-direction: row;
+    	align-items: center;
+    	width: 100%;
+    	padding: 20px;
+	}
+	.col-md-6 {
+		margin-bottom: 20px;
+	}
+}
+.app-header .navbar-nav .dropdown-menu-right {
+	right: 2px;
+}
