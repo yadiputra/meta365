@@ -11135,43 +11135,7 @@ canvas {
 .main .container-fluid {
   padding: 0 30px;
 }
-.main .main-table .row{
-  flex-direction: row;
-  align-items: center;
-}
-.main .main-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-@media (min-width: 758px) {
-  .main .main-content {
-    position: absolute;
-    top: 50%;
-    margin: 0px;
-    width: calc(100% - 200px);
-    transform: translateY(-50%);
-  }
-}
-.main-table {
-  border: 1px solid rgba(0,0,0,0.2);
-  border-radius: 4px;
-  background: #fff;
-}
-.main-table .col-md-6 {
-  margin-bottom: 20px;
-}
-.main-table .header {
-  display: flex;
-  width: 100%;
-  padding: 12px 10px;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  margin-bottom: 20px;
-}
-.main-table .body {
-    padding: 0px 10px;
 
-}
 
 .app-header {
   position: relative;
@@ -14421,7 +14385,73 @@ body {
 
 /* OVERIDER
 -----------------------*/
+.hidden {
+  display: none;
+}
+.navbar-toggler.aside-menu-toggler.d-lg-none,
+.navbar-toggler.aside-menu-toggler.d-lg-none .navbar-toggler-icon,
+.navbar-toggler.aside-menu-toggler.d-md-down-none {
+  display: none !important;
+}
+.form-control option {
+  padding: 10px 0px;
+}
+.navbar-nav .fa-user-circle {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.dropdown-menu.dropdown-menu-right.show {
+  top: 33px;
+}
+@media (min-width: 768px) {
+  .dropdown-menu.dropdown-menu-right.show {
+    right: 2px;
+  }
+}
+.main .main-table .row{
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.main .main-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-saldo {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+@media (min-width: 758px) {
+  .main .main-content {
+    position: absolute;
+    top: 50%;
+    margin: 0px;
+    width: calc(100% - 200px);
+    transform: translateY(-50%);
+  }
+}
+.main-table {
+  border-bottom: 1px solid #c8ced3;
+  border-radius: 4px;
+  background: #fff;
+}
+.main-table .col-md-6 {
+  margin-bottom: 20px;
+}
+.main-table .header {
+  display: flex;
+  width: 100%;
+  padding: 12px 22px;
+  margin-bottom: 20px;
+  background-color: #f0f3f5;
+  font-weight: 600;
+}
+.main-table .body {
+    padding: 0px 10px;
 
-
+}
 
 /*# sourceMappingURL=style.css.map */
